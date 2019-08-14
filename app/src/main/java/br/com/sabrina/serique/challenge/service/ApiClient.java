@@ -8,7 +8,9 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 import org.json.JSONArray;
 
+import java.util.List;
+
 public interface ApiClient {
-    @GET("/orama-media/json/fund_detail_full.json")
-    Call<Fundo> getJSONData();
+    @GET("/orama-media/json/fund_detail_full.json?limit=1000&offset=0&serializer=fund_detail_full")
+    Call<List<Fundo>> getAllFundosData();
 }
