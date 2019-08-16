@@ -14,7 +14,7 @@ import br.com.sabrina.serique.challenge.constants.Constantes;
 import br.com.sabrina.serique.challenge.model.Fundo;
 
 public class DetailActivity extends AppCompatActivity implements Constantes {
-    TextView initial_date, full_name, risk, fundy_type, tax, invest, objetivo;
+    TextView initial_date, full_name, risk, fundy_type, tax, invest, objetivo, simple_name;
     Button video;
     private Fundo fundo;
 
@@ -27,7 +27,8 @@ public class DetailActivity extends AppCompatActivity implements Constantes {
                 .getSerializable(PARAM_OBJ_FUNDO);
 
         final String url = fundo.getStrategyVideo().getUrl();
-
+        
+        simple_name = (TextView) findViewById(R.id.tvFS);
         initial_date = (TextView) findViewById(R.id.tvDI);
         full_name = (TextView) findViewById(R.id.tvFN);
         risk = (TextView) findViewById(R.id.tvR);
@@ -37,6 +38,7 @@ public class DetailActivity extends AppCompatActivity implements Constantes {
         objetivo = (TextView) findViewById(R.id.tvO);
         video = (Button) findViewById(R.id.button);
 
+        simple_name.setText(fundo.getSimpleName())
         initial_date.setText(fundo.getInitialDate());
         full_name.setText(fundo.getFullName());
         risk.setText(fundo.getSpecification().getFundSuitabilityProfile().getName());
