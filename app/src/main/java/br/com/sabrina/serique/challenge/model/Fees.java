@@ -4,7 +4,9 @@ package br.com.sabrina.serique.challenge.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Fees {
+import java.io.Serializable;
+
+public class Fees implements Serializable {
 
     @SerializedName("maximum_administration_fee")
     @Expose

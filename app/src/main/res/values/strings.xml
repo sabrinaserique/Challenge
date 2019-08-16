@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">challenge</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+    <string name="initial_date">Data inicial</string>
+    <string name="full_name">Nome:</string>
+    <string name="fundy_type">Tipo de Renda:</string>
+    <string name="risk">Perfil de investimento:</string>
+    <string name="stratety">Estratégia de investimento:</string>
+    <string name="objecti">Objetivo:</string>
+    <string name="classi">Tipo de investimento:</string>
+    <string name="tax">Taxa de administração:</string>
+    <string name="invest">Investimento mínimo inicial:</string>
+    <string name="descr">Descrição do fundo:</string>
+    <string name="video">Saiba mais:</string>
+    <string name="msgErro">Não foi possível conectar com o servidor</string>
+
 </resources>

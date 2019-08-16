@@ -1,11 +1,12 @@
 
 package br.com.sabrina.serique.challenge.model;
 
+import java.io.Serializable;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Fundo {
+public class Fundo implements Serializable {
 
     @SerializedName("initial_date")
     @Expose

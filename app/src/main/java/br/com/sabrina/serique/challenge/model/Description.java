@@ -4,7 +4,9 @@ package br.com.sabrina.serique.challenge.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Description {
+import java.io.Serializable;
+
+public class Description implements Serializable {
 
     @SerializedName("objective")
     @Expose

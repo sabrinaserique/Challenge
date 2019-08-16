@@ -3,7 +3,9 @@ package br.com.sabrina.serique.challenge.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class PerformanceVideo {
+import java.io.Serializable;
+
+public class PerformanceVideo implements Serializable {
     @SerializedName("description")
     @Expose
     private String description;
