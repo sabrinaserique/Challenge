@@ -14,8 +14,8 @@
         style="@style/match">
 
         <LinearLayout
-            style="@style/matchVertical"
-            android:id="@+id/container"/>
+            android:id="@+id/container"
+            style="@style/matchVertical" />
 
     </FrameLayout>
 
