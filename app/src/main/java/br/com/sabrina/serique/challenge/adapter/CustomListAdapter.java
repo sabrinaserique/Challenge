@@ -49,12 +49,14 @@ public class CustomListAdapter extends BaseAdapter {
         }
 
         TextView fundoFullName = (TextView) view.findViewById(R.id.tvFullName);
-
+        TextView reais = (TextView) view.findViewById(R.id.tvReais);
 
         Fundo funds = this.fundos.get(i);
         String fullName = funds.getSimpleName();
+        String valor = "R$ " + funds.getOperability().getMinimumInitialApplicationAmount();
 
         fundoFullName.setText(fullName);
+        reais.setText(valor);
 
         return view;
     }

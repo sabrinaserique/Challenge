@@ -38,7 +38,7 @@ public class DetailActivity extends AppCompatActivity implements Constantes {
         objetivo = (TextView) findViewById(R.id.tvO);
         video = (Button) findViewById(R.id.button);
 
-        simple_name.setText(fundo.getSimpleName())
+        simple_name.setText(fundo.getSimpleName());
         initial_date.setText(fundo.getInitialDate());
         full_name.setText(fundo.getFullName());
         risk.setText(fundo.getSpecification().getFundSuitabilityProfile().getName());
