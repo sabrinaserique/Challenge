@@ -36,12 +36,12 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:paddingBottom="10dp"
-            android:text="@string/initial_date"
+            android:text="@string/full_name"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvDI"
+            android:id="@+id/tvFN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="16dp"
@@ -66,12 +66,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                android:text="@string/full_name"
+                android:text="@string/initial_date"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvFN"
+                android:id="@+id/tvDI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
